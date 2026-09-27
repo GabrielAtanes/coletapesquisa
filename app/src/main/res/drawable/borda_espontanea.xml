@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Cor de fundo dentro da caixa -->
+    <solid android:color="#FFFFFF" />
+
+    <!-- Borda: espessura e cor -->
+    <stroke
+        android:width="2dp"
+        android:color="#0000FF" />
+
+    <!-- Cantos arredondados (opcional) -->
+    <corners android:radius="4dp" />
+
+    <!-- Espaçamento interno do texto -->
+    <padding
+        android:left="12dp"
+        android:top="23dp"
+        android:right="12dp" />
+
+</shape>
