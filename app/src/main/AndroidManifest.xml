@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permissão de localização aproximada (fica FORA do <application>) -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Coletapesquisa">
 
+        <!-- Primeira tela do app (splash) -->
         <activity
             android:name=".inicioActivity"
             android:exported="true"
@@ -22,22 +26,16 @@
             </intent-filter>
         </activity>
 
+        <!-- Demais telas (apenas classes que são Activity) -->
         <activity android:name=".LoginActivity" android:exported="false" />
         <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".EspontaneaActivity" android:exported="false" />
         <activity android:name=".CandidatosActivity" android:exported="false" />
-        <activity android:name=".ResultadosActivity" android:exported="false"
-            tools:ignore="Instantiatable" />
-        <activity android:name=".MotivosActivity" android:exported="false"
-            tools:ignore="Instantiatable" />
-        <activity android:name=".DadosPesquisa" android:exported="false"
-            tools:ignore="Instantiatable" />
-        <activity android:name=".EspontaneaActivity" android:exported="false"
-            tools:ignore="Instantiatable" />
+        <activity android:name=".MotivosActivity" android:exported="false" />
         <activity android:name=".DadosEntrevistadoActivity" android:exported="false" />
-        <activity android:name=".Entrevista" android:exported="false"
-            tools:ignore="Instantiatable" />
-
-
+        <activity android:name=".ResultadosActivity" android:exported="false" />
+        <activity android:name=".EleitoresActivity" android:exported="false" />
+        <activity android:name=".ResultadosPesquisaActivity" android:exported="false" />
 
     </application>
 

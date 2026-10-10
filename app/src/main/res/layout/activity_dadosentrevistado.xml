@@ -87,7 +87,19 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/FinalizarDados"
+            android:id="@+id/btTrocarUser2"
+            android:text="Trocar Usuário"
+            android:backgroundTint="#4CAF50"
+            android:textSize="20dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btFinalizarDados"
             android:text="FINALIZAR"
             android:backgroundTint="#4CAF50"
             android:textSize="20dp" />

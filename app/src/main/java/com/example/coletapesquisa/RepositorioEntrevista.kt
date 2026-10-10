@@ -52,10 +52,17 @@ object RepositorioEntrevistas {
                     candidato = obj.getString("candidato"),
                     motivos = motivos,
                     dataHora = obj.getString("dataHora"),
-                    personagemEspo = obj.getString("personagem_espo")
+                    personagemEspo = obj.getString("personagem_espo"),
+                    local = obj.optString("local", "")
                 )
             )
         }
         return lista
+    }
+    fun limparTudo(context: Context) {
+        context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
+            .edit()
+            .remove(CHAVE)
+            .apply()
     }
 }

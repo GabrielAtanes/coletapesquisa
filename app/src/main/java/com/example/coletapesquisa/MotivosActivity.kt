@@ -67,14 +67,14 @@ class MotivosActivity : AppCompatActivity() {
             }
         }
 
-        // "Nenhum": marca ele e desmarca todo o resto
+        // "Nenhum": marca ele e desmarca tudo
         (checkNenhum.parent as View).setOnClickListener {
             val novoEstado = !checkNenhum.isChecked
             limparTudo()
             checkNenhum.isChecked = novoEstado
         }
 
-        // "Não Sei": marca ele e desmarca todo o resto
+        // "Não Sei": marca ele e desmarca tudo
         (checkNaoSei.parent as View).setOnClickListener {
             val novoEstado = !checkNaoSei.isChecked
             limparTudo()
