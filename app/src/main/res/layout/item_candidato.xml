@@ -1,416 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@drawable/borda_espontanea"
+    android:gravity="center_vertical"
+    android:clickable="true"
+    android:focusable="true">
 
-<!--//Primeiro Candidato configurado Luffy-->
+    <CheckBox
+        android:id="@+id/checkCandidato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/imgCandidato"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/candidato1" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="@drawable/borda_espontanea"
-        android:gravity="center_vertical"
-        android:clickable="true"
-        android:focusable="true"
-        tools:ignore="MissingConstraints">
+        android:layout_marginStart="8dp"
+        android:orientation="vertical">
 
-
-        <CheckBox
-            android:id="@+id/checkCandidato1"
+        <TextView
+            android:id="@+id/tvNomeCandidato"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:clickable="false"
-            android:focusable="false" />
+            android:textStyle="bold"
+            tools:text="Nome do candidato" />
 
-        <ImageView
-            android:id="@+id/imgCandidato1"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="8dp"
-            android:src="@drawable/candidato1"
-            android:scaleType="centerCrop" />
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/tvDesenho"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginStart="8dp">
+            tools:text="Desenho" />
 
-            <TextView
-                android:id="@+id/tvNomeCandidato1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Monkey D. Luffy"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tvDesenho1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="One Piece" />
-
-        </LinearLayout>
     </LinearLayout>
-
-<!--//Segundo Candidato configurado Wolverine -->
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="@drawable/borda_espontanea"
-        android:gravity="center_vertical"
-        android:clickable="true"
-        android:focusable="true"
-        tools:ignore="MissingConstraints">
-
-        <CheckBox
-            android:id="@+id/checkCandidato2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="false"
-            android:focusable="false" />
-
-        <ImageView
-            android:id="@+id/imgCandidato2"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="8dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/candidato2" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvNomeCandidato2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Wolverine"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tvDesenho2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="X-men: Evolution " />
-
-        </LinearLayout>
-    </LinearLayout>
-
-<!--    Terceiro Candidato Configurado Batman-->
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="@drawable/borda_espontanea"
-        android:gravity="center_vertical"
-        android:clickable="true"
-        android:focusable="true"
-        tools:ignore="MissingConstraints">
-
-        <CheckBox
-            android:id="@+id/checkCandidato3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="false"
-            android:focusable="false" />
-
-        <ImageView
-            android:id="@+id/imgCandidato3"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="8dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/candidato3" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvNomeCandidato3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Batman"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tvDesenho3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="The Batman " />
-
-        </LinearLayout>
-    </LinearLayout>
-
-<!--    Quarto Candidato Configurado Denji-->
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="@drawable/borda_espontanea"
-        android:gravity="center_vertical"
-        android:clickable="true"
-        android:focusable="true"
-        tools:ignore="MissingConstraints">
-
-        <CheckBox
-            android:id="@+id/checkCandidato4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="false"
-            android:focusable="false" />
-
-        <ImageView
-            android:id="@+id/imgCandidato4"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="8dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/candidato4" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvNomeCandidato4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Denji"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tvDesenho4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Chainsaw Man " />
-
-        </LinearLayout>
-    </LinearLayout>
-
-<!--    Quinto Candidato Configurado Rock Lee-->
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="@drawable/borda_espontanea"
-        android:gravity="center_vertical"
-        android:clickable="true"
-        android:focusable="true"
-        tools:ignore="MissingConstraints">
-
-        <CheckBox
-            android:id="@+id/checkCandidato5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="false"
-            android:focusable="false" />
-
-        <ImageView
-            android:id="@+id/imgCandidato5"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="8dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/candidato5" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvNomeCandidato5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rock Lee"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tvDesenho5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Naruto " />
-
-        </LinearLayout>
-    </LinearLayout>
-
-<!--  Branco-->
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="@drawable/borda_espontanea"
-        android:gravity="center_vertical"
-        android:clickable="true"
-        android:focusable="true"
-        tools:ignore="MissingConstraints">
-
-        <CheckBox
-            android:id="@+id/checkBranco"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="false"
-            android:focusable="false" />
-
-        <ImageView
-            android:id="@+id/imgBranco"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="8dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/branco" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvBranco"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Branco"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <!--  Nulo-->
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="@drawable/borda_espontanea"
-        android:gravity="center_vertical"
-        android:clickable="true"
-        android:focusable="true"
-        tools:ignore="MissingConstraints">
-
-        <CheckBox
-            android:id="@+id/checkNulo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="false"
-            android:focusable="false" />
-
-        <ImageView
-            android:id="@+id/imgNulo"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="8dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/nulo" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvNulo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nulo"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <!--  Não Sei-->
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="@drawable/borda_espontanea"
-        android:gravity="center_vertical"
-        android:clickable="true"
-        android:focusable="true"
-        tools:ignore="MissingConstraints">
-
-        <CheckBox
-            android:id="@+id/checkNaoSei"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="false"
-            android:focusable="false" />
-
-        <ImageView
-            android:id="@+id/imgNaoSei"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="8dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/naosei" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvNaoSei"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Não Sei"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

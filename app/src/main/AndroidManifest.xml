@@ -25,7 +25,19 @@
         <activity android:name=".LoginActivity" android:exported="false" />
         <activity android:name=".MainActivity" android:exported="false" />
         <activity android:name=".CandidatosActivity" android:exported="false" />
-        <activity android:name=".ResultadosActivity" android:exported="false" />
+        <activity android:name=".ResultadosActivity" android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".MotivosActivity" android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".DadosPesquisa" android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".EspontaneaActivity" android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".DadosEntrevistadoActivity" android:exported="false" />
+        <activity android:name=".Entrevista" android:exported="false"
+            tools:ignore="Instantiatable" />
+
+
 
     </application>
 

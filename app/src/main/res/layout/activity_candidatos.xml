@@ -18,19 +18,19 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <include layout="@layout/item_candidato" android:id="@+id/tvNomeCandidato1"/>
-            <include layout="@layout/item_candidato" android:id="@+id/tvNomeCandidato2"/>
-            <include layout="@layout/item_candidato" android:id="@+id/tvNomeCandidato3"/>
-            <include layout="@layout/item_candidato" android:id="@+id/tvNomeCandidato4"/>
-            <include layout="@layout/item_candidato" android:id="@+id/tvNomeCandidato5"/>
+            <include layout="@layout/item_candidato" android:id="@+id/itemCandidato1"/>
+            <include layout="@layout/item_candidato" android:id="@+id/itemCandidato2"/>
+            <include layout="@layout/item_candidato" android:id="@+id/itemCandidato3"/>
+            <include layout="@layout/item_candidato" android:id="@+id/itemCandidato4"/>
+            <include layout="@layout/item_candidato" android:id="@+id/itemCandidato5"/>
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="40dp" />
 
-            <include layout="@layout/item_candidato" android:id="@+id/tvBranco"/>
-            <include layout="@layout/item_candidato" android:id="@+id/tvNulo"/>
-            <include layout="@layout/item_candidato" android:id="@+id/tvNaoSei"/>
+            <include layout="@layout/item_candidato" android:id="@+id/itemBranco"/>
+            <include layout="@layout/item_candidato" android:id="@+id/itemNulo"/>
+            <include layout="@layout/item_candidato" android:id="@+id/itemNaoSei"/>
 
             <Space
                 android:layout_width="match_parent"
